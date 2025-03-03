@@ -1,0 +1,15 @@
+.landing-text {
+  margin: 78px 0 108px 0;
+  display: flex;
+  gap: 53px;
+  &__title {
+    color: black;
+    font: 500 normal 48px/110% Roboto;
+    max-width: 430px;
+  }
+  &__subtitle {
+    color: #8B8B8B;
+    font: 400 normal 18px/135% Roboto;
+    max-width: 529px;
+  }
+}

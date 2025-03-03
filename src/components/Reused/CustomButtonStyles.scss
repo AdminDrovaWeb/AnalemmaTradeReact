@@ -1,0 +1,21 @@
+.button {
+  padding: 17px 32px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: max-content;
+  cursor: pointer;
+
+  color: var(--color-black);
+  font: 500 normal 18px/110% 'Roboto';
+
+  &_theme_gold {
+    background-color: var(--bg-gold);
+    transition: var(--transition);
+    &:hover {
+      background-color: #bf9d12;
+    }
+  }
+}
