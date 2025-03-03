@@ -1,28 +1,29 @@
 import './Header.scss'
 import LogoIcon from '../../assets/svg/logo.svg';
 import PhoneIcon from '../../assets/svg/s-tel.svg';
+import { Link } from "react-router-dom";
 
 function Header() {
     const myObject =[
         {
             name: 'Главная',
-            route: 'firstLink',
+            route: '/',
         },
         {
             name: 'Каталог',
-            route: 'secondLink',
+            route: '/catalog',
         },
         {
             name: 'Прайс-лист',
-            route: 'threeLink',
+            route: '/',
         },
         {
             name: 'Сдать золото',
-            route: 'fourLink',
+            route: '/',
         },
         {
             name: 'Контакты',
-            route: 'fiveLink',
+            route: '/',
         }
     ];
     return (
@@ -33,13 +34,13 @@ function Header() {
                     <div className="header__container">
                         <div className="header__navigation">
                             {myObject.map((item, index) => (
-                                <a
+                                <Link
                                     key={index}
-                                    href={item.route}
+                                    to={item.route}
                                     className="header__src"
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                             ))}
                         </div>
                         <div className="header__link">
