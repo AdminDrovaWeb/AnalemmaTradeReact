@@ -1,0 +1,78 @@
+.list-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  &__content {
+    background: white;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 12px;
+    box-shadow: 0 12px 24px #00345729;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+  }
+
+  &__card {
+    position: relative;
+    &:hover {
+      .list-items__button {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__name {
+    font: 400 normal 14px/135% Roboto;
+    color: #8B8B8B;
+  }
+
+  &__prices {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__old-price {
+    color: #F1D151;
+    font: 400 normal 16px/135% Roboto;
+    text-decoration: line-through;
+  }
+
+  &__new-price {
+    color: black;
+    font: 400 normal 16px/135% Roboto;
+  }
+
+  &__discount {
+    font: 400 normal 14px/135% Roboto;
+    color: white;
+    background: red;
+    padding: 5px 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  &__quantity {
+    font: 400 normal 14px/135% Roboto;
+    color: black;
+  }
+
+  &__button {
+    position: absolute;
+    padding-top: 20px;
+    transform: translate(-50%, 0);
+    bottom: -70px;
+    left: 50%;
+    opacity: 0;
+    display: none;
+  }
+}

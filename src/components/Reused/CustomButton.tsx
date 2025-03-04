@@ -1,7 +1,7 @@
 import './CustomButtonStyles.scss';
 
 interface ICustomButtonProps {
-    theme: string;
+    theme: 'gold' | 'dark';
     name?: string | number | null
 }
 
