@@ -30,23 +30,34 @@
     }
   }
 
-  &__link {
+  &__user-content {
     display: flex;
+    gap: 14px;
     align-items: center;
   }
 
-  &__link {
-    display: flex;
-    gap: 14px;
+  &__user-name {
+    color: #F1D151;
+    font: 400 normal 16px / 135% Roboto;
   }
 
-  &__call {
-    color: var(--color-white);
-    font: 400 normal 21px/110% Roboto;
-    transition: var(--transition);
-
-    &:hover {
-      color: var(--bg-gold);
+  &__basket {
+    position: relative;
+    &__counter {
+      position: absolute;
+      width: auto;
+      min-width: 18px;
+      height: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      background-color: #F1D151;
+      padding: 3px;
+      border-radius: 50%;
+      font: 400 normal 13px/135% Roboto;
+      top: -10px;
+      right: -35px;
     }
   }
 }

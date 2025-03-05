@@ -74,5 +74,10 @@
     left: 50%;
     opacity: 0;
     display: none;
+    z-index: 1;
+  }
+
+  &__image {
+    width: 270px;
   }
 }
