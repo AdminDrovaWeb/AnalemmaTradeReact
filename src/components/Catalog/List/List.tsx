@@ -149,6 +149,7 @@ function List() {
             kind: 'red-gold',
         }
     ].map((item, index) => ({ ...item, id: index + 1 }));
+    console.log('hello');
     return (
         <>
             <div className="list-items">
